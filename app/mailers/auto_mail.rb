@@ -1,9 +1,8 @@
 class AutoMail < ActionMailer::Base
-  default from: "from@example.com"
-
+   default from: "networking information"
   def sendResult
-    email = "ty_edge_540t@yahoo.com"
+    email = ["ty_edge_540t@yahoo.com"]
     @gateways = Gateway.all
-    mail(:to => email, :subject => "network test speed")
+    mail(:to => email, :subject => "Network Status Alert !")
   end
 end

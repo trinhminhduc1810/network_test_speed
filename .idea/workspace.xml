@@ -28,10 +28,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="network_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="network_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/network_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="32" selection-start="473" selection-end="473" vertical-scroll-proportion="0.28639618">
+            <state line="24" column="15" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sendResult.text.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/auto_mail/sendResult.text.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="39" selection-start="121" selection-end="121" vertical-scroll-proportion="-1.92">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auto_mail.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/mailers/auto_mail.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="66" selection-start="233" selection-end="233" vertical-scroll-proportion="0.15274464">
               <folding />
             </state>
           </provider>
@@ -55,12 +73,12 @@
         <option value="$PROJECT_DIR$/app/views/network/send_result.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/app/mailers/auto_mail.rb" />
         <option value="$PROJECT_DIR$/app/helpers/network_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/network/test.html.erb" />
         <option value="$PROJECT_DIR$/app/views/auto_mail/sendResult.text.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/network.js" />
         <option value="$PROJECT_DIR$/app/controllers/network_controller.rb" />
+        <option value="$PROJECT_DIR$/app/mailers/auto_mail.rb" />
       </list>
     </option>
   </component>
@@ -151,15 +169,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="network" />
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -178,6 +192,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auto_mail" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -228,6 +264,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -607,11 +661,6 @@
         <state line="0" column="10" selection-start="4" selection-end="10" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="44" selection-start="1701" selection-end="1701" vertical-scroll-proportion="0.8090692" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="17" selection-start="803" selection-end="803" vertical-scroll-proportion="0.7446301" />
@@ -657,19 +706,30 @@
         <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/auto_mail/sendResult.text.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="39" selection-start="121" selection-end="121" vertical-scroll-proportion="0.05904059" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/mailers/auto_mail.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="221" selection-end="221" vertical-scroll-proportion="0.1718377" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/network.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="37" selection-start="165" selection-end="165" vertical-scroll-proportion="0.07637232">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="20" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.59904534">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/auto_mail/sendResult.text.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="39" selection-start="121" selection-end="121" vertical-scroll-proportion="-1.92">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/network_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="15" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -681,9 +741,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/network_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/mailers/auto_mail.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="473" selection-end="473" vertical-scroll-proportion="0.28639618">
+        <state line="8" column="66" selection-start="233" selection-end="233" vertical-scroll-proportion="0.15274464">
           <folding />
         </state>
       </provider>

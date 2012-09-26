@@ -20,7 +20,9 @@ class NetworkController < ApplicationController
         end
       end
       if Gateway.where(:download => "Very slow speed or connection failed").count > 0
+        sleep(4)
         AutoMail.sendResult.deliver
+        sleep(4)
       end
       system("/Users/eastagile/code/network_test/script/clear_cache")
       system("/Users/eastagile/code/network_test/script/close_chrome")
