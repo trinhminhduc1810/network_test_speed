@@ -1,0 +1,4 @@
+#!/bin/bash
+killall "Safari"
+clear
+echo "Safary is closed"

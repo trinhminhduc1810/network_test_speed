@@ -1,0 +1,5 @@
+#!/bin/bash
+killall chrome
+open -a Google\ Chrome http://localhost:3001/test/
+clear
+echo "Start to network speed"

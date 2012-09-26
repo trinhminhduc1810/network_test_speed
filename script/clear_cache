@@ -1,0 +1,4 @@
+#!/bin/bash
+rm -rf ~/Library/Caches/com.apple.Safari/*
+rm -rf ~/Library/Safari/*
+echo -e "\ncleared cache"

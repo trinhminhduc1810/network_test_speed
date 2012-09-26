@@ -1,0 +1,5 @@
+#!/bin/bash
+open -a /Applications/Safari.app/ http://localhost:3001/test?gateway_id=$1
+clear
+echo "Open Safari Successfully" 
+
