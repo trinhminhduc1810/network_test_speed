@@ -6,7 +6,7 @@
 </script>
 
 
-<%= form_tag({:action => :test_upload}, :multipart => true, :method => :get) do %>
+<%= form_tag({:action => :test_upload}, :multipart => true) do %>
   <%= file_field_tag 'test_file' %>
   <%=  submit_tag 'submit' %>
 <% end %>
