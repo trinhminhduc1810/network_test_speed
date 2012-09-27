@@ -1,0 +1,7 @@
+#!/bin/bash
+START=$(date +%s)
+`curl --form test_file=@Archive.zip http://networktest.herokuapp.com/test_upload`
+END=$(date +%s)
+result=$(( $END - $START))
+echo $result
+

@@ -15,10 +15,14 @@ function timeout() {
     });
 }
 
+function getCurrentTime() {
+    return (new Date()).getTime();
+}
+
 
 
 function showResults() {
-    endTime = (new Date()).getTime();
+    endTime = getCurrentTime();
     var duration = (endTime - startTime)/1000;
     var result = (downloadSize/duration)/1000000;
     result = result.toFixed(2);

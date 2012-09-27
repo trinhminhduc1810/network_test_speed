@@ -45,15 +45,8 @@ class NetworkController < ApplicationController
     system("/Users/eastagile/code/network_test/script/open_chrome #{gateway}")
   end
 
-  def upload_page
-
-  end
 
   def test_upload
-    before = Time.now
     uploaded= params[:test_file]
-    puts uploaded
-    after = Time.now
-    @result = uploaded
   end
 end
