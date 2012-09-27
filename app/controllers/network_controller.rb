@@ -30,21 +30,34 @@ class NetworkController < ApplicationController
 
   end
 
-  def send_result
+  def download_result
     gateway = params[:gate_way]
-    result = params[:result_network]
+    result = params[:result_download]
     @current_gate_way = Gateway.find(gateway)
     if @current_gate_way
       @current_gate_way.download = result
       @current_gate_way.save
     end
-    system("/Users/eastagile/code/network_test/script/clear_cache")
+    render :nothing => true
     system("/Users/eastagile/code/network_test/script/close_chrome")
     system("/Users/eastagile/code/network_test/script/clear_cache")
     sleep(6)
     system("/Users/eastagile/code/network_test/script/open_chrome #{gateway}")
   end
 
+  def upload_result
+    period = Float(params[:period])
+    id = params[:id]
+    filesize = Float(44198400)
+    result = (filesize/period)/1000000
+    result = format("%.2f mbps",result)
+    @current_gate_way = Gateway.find_by_id(id)
+    if @current_gate_way
+      @current_gate_way.upload = result
+      @current_gate_way.save
+    end
+    render :nothing => true
+  end
 
   def test_upload
     uploaded= params[:test_file]

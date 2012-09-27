@@ -1,6 +1,0 @@
-#!/bin/bash
-START=$(date +%s)
-sleep 4
-AFTER=$(date +%s)
-result=$(( $AFTER - $START))
-echo $result

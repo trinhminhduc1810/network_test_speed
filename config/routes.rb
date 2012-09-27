@@ -28,7 +28,8 @@ NetworkTest::Application.routes.draw do
   #   end
   controller :network do
     get 'test' => :test
-    get 'send_result' => :send_result
+    get 'download_result' => :download_result
+    get 'upload_result' => :upload_result
     post 'test_upload' => :test_upload
   end
   # Sample resource route with sub-resources:
