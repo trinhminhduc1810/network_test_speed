@@ -1,3 +1,11 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+    startTime = (new Date()).getTime();
+    window.setTimeout("timeout()", 95000);
+  });
+</script>
+
+
 <h1 id="hello">Test</h1>
 <img id="image_test" src="http://networktest.herokuapp.com/assets/kats-yellow-flower.jpg" onload="showResults()"/>
 <div class="gateway"><%= @gateway.id %></div>

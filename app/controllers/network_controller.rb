@@ -51,10 +51,9 @@ class NetworkController < ApplicationController
 
   def test_upload
     before = Time.now
-    debugger
     uploaded= params[:test_file]
     puts uploaded
     after = Time.now
-    @result = after - before
+    @result = uploaded
   end
 end

@@ -1,10 +1,5 @@
 var startTime, endTime;
 var downloadSize = 44198400 //bit
-$(document).ready(function(){
-    startTime = (new Date()).getTime();
-    window.setTimeout("timeout()", 95000);
-});
-
 
 
 function timeout() {
@@ -40,3 +35,5 @@ function showResults() {
         dataType: "script"
     });
 }
+
+
