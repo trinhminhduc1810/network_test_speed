@@ -1,4 +1,0 @@
-#!/bin/bash
-networksetup -switchtolocation $1
-clear
-echo "Change Gateway Successfully"

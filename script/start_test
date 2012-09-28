@@ -1,2 +1,67 @@
 #!/bin/bash
-open -a /Applications/Safari.app/ http://localhost:3001/test
+
+DOWNLOAD_URL="http://networktest.herokuapp.com/assets/kats-yellow-flower.jpg"
+
+UPLOAD_URL="http://networktest.herokuapp.com/test_upload"
+
+UPLOAD_FILE="@/Users/eastagile/code/network_test/script/kats-yellow-flower.jpg"
+
+changeGate()
+{
+  if [[ $1 -eq 1 ]] ; then
+    gateway="VNPT1"
+  elif [[ $1 -eq 2 ]] ; then
+    gateway="VNPT2"
+  elif [[ $1 -eq 3 ]] ; then
+    gateway="VIETTEL1"
+  elif [[ $1 -eq 4 ]] ; then
+    gateway="VIETTEL2"
+  fi
+  result=`networksetup -switchtolocation $gateway`
+  if [[ "$result" == "found it!" ]] ; then
+    echo -e "change to gateway $gateway successfully"
+  else
+    echo -e "failed to change to gateway $gateway"
+  fi
+}
+
+download()
+{
+  Start=$(date +%s)
+  output=`curl $DOWNLOAD_URL`
+  End=$(date +%s)
+  if [[ "$output" == "" ]] ; then
+    echo "Connection Failed"
+  else
+    echo $(( $End - $Start ))
+  fi
+  return
+}
+
+upload()
+{
+  Start=$(date +%s)
+  ouput=`curl --form test_file=$UPLOAD_FILE $UPLOAD_URL`
+  End=$(date +%s)
+  echo $(( $End - $Start ))
+  return
+}
+
+updateDownloadSpeed()
+{
+  curl --get -d period=$2 -d id=$1 http://localhost:3001/download_result
+}
+
+updateUploadSpeed()
+{
+  curl --get -d period=$2 -d id=$1 http://localhost:3001/upload_result
+}
+
+
+result=`upload`
+updateUploadSpeed 4 $result
+
+
+
+
+
