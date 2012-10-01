@@ -1,0 +1,22 @@
+<script type="text/javascript">
+  google.load("visualization", "1", {packages:["corechart"]});
+  google.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Gateway','Upload','Download'],
+      ['VNPT-1',<%= @gateways[0].upload %>,<%= @gateways[0].download %>],
+      ['VNPT-2',<%= @gateways[1].upload %>,<%= @gateways[1].download %>],
+      ['VIETTEL-1',<%= @gateways[2].upload %>,<%= @gateways[2].download %>],
+      ['VIETTEL-2',<%= @gateways[3].upload %>,<%= @gateways[3].download %>]
+    ]);
+
+    var options = {
+      title: 'East Agile Network Performance',
+      vAxis: {title: 'Gateway',  titleTextStyle: {color: 'red'}}
+    };
+
+    var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
+</script>
+<div id="chart_div" style="width: 900px; height: 500px;"></div>

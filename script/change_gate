@@ -1,0 +1,13 @@
+#!/bin/bash
+changeGate()
+{
+  result=`networksetup -switchtolocation $1`
+  if [[ "$result" == "found it!" ]] ; then
+    echo -e "change to gateway $1 successfully"
+  else
+    echo -e "failed to change to gateway $1"
+  fi
+
+}
+
+changeGate $1

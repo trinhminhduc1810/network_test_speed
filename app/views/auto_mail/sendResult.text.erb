@@ -1,5 +1,6 @@
-======Result======
+==================Result==================
 <% @gateways.each do |gateway| %>
 Gateway: <%= gateway.name %>
-Download Speed: <%= gateway.download %>
+ => Download Speed: <%= format("%.2f mbps",gateway.download) %>
+ => Upload Speed: <%= format("%.2f mbps",gateway.upload) %>
 <% end %>

@@ -31,7 +31,7 @@ download()
   output=`curl $DOWNLOAD_URL`
   End=$(date +%s)
   if [[ "$output" == "" ]] ; then
-    echo "Connection Failed"
+    echo "Failed"
   else
     echo $(( $End - $Start ))
   fi
@@ -57,9 +57,39 @@ updateUploadSpeed()
   curl --get -d period=$2 -d id=$1 http://localhost:3001/upload_result
 }
 
+testUpload()
+{
+  result=`upload`
+  updateUploadSpeed $1 $result
+}
 
-result=`upload`
-updateUploadSpeed 4 $result
+testDownload()
+{
+  result=`download`
+  updateDownloadSpeed $1 $result
+  echo $result
+  return
+}
+
+sendAlert()
+{
+  curl http://localhost:3001/send_alert
+  echo "Send alert request"
+}
+
+main()
+{
+  for (( i = 1; i <= 4; i++ ))
+  do
+    changeGate $i
+    sleep 3
+    testDownload $i
+    testUpload $i
+  done
+  sendAlert
+}
+
+main
 
 
 

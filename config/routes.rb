@@ -29,6 +29,8 @@ NetworkTest::Application.routes.draw do
   controller :network do
     get 'download_result' => :download_result
     get 'upload_result' => :upload_result
+    get 'send_alert' => :send_alert
+    get 'show_chart' => :show_chart
   end
   # Sample resource route with sub-resources:
   #   resources :products do
